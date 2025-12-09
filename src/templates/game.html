@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Word guesser game</title>
+
+<h2>Word: {{answer}}</h2>
+<h2>Lives: {{lives}}</h2>
+
+{% if message %}
+<p>{{message}}</p>
+{% endif %}
+
+<p> enter a letter</p>
+
+
+    <form action = "/enter" method = "POST">
+        <input type = "text" name = "users_guess"> Enter a letter </input>
+        <button type = "submit"> submit</button>
+    </form>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
