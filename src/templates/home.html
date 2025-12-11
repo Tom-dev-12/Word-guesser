@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <title>Word guesser</title>
+    <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_screen.css') }}">
 
-    <P>Choose a difficulty</P>
+    
+    <title>Word guesser</title>
+    
+
+    <h2>Choose a difficulty</h2>
+    </head>
+    <body>
     <form action = "/easy" method = "POST">
         <button type = "submit">Easy difficulty</button>
     </form>
@@ -11,15 +18,17 @@
         <button type = "submit"> medium difficulty</button>
     </form>
 
-    <form>
+    <form action = "/hard" method = "POST">
         <button type = "submit"> Hard difficulty</button>
     </form>
     <br><br><br>
 
-    <form action = "/game_screen">
-        <button type = "submit">Play</button>
+    <p>You have nine lives to guess a word choose a difficulty to start </p>
 
-    </form>
+    
+
+    </body>
+
 
 
 
